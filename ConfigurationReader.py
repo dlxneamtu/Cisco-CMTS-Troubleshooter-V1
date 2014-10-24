@@ -58,13 +58,13 @@ class ConfigurationReader(wx.Panel):
 ############## Login Credentials ##############
 
         self.deviceNameLabel = wx.StaticText(self, -1, 'Hostname:')
-        self.deviceNameText = wx.TextCtrl(self, -1, size=(-1,-1))
+        self.deviceNameText = wx.TextCtrl(self, -1, size=(110,-1))
         self.usernameLabel = wx.StaticText(self, -1, 'Username:')
-        self.usernameText = wx.TextCtrl(self, -1, size=(-1,-1))
+        self.usernameText = wx.TextCtrl(self, -1, size=(110,-1))
         self.passwordLabel = wx.StaticText(self, -1, 'Password:')
-        self.passwordText = wx.TextCtrl(self, -1, size=(-1,-1), style = wx.TE_PASSWORD)
+        self.passwordText = wx.TextCtrl(self, -1, size=(110,-1), style = wx.TE_PASSWORD)
         self.enableLabel = wx.StaticText(self, -1, 'Enable:')
-        self.enableText = wx.TextCtrl(self, -1, size=(-1,-1),style = wx.TE_PASSWORD)
+        self.enableText = wx.TextCtrl(self, -1, size=(110,-1),style = wx.TE_PASSWORD)
         for item in [self.deviceNameText, self.usernameText, self.passwordText, self.enableText]:
             item.Enable(False)
             item.SetFont(wx.Font(12,wx.MODERN,wx.NORMAL,wx.NORMAL))

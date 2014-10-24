@@ -29,4 +29,4 @@ class Notebook(wx.Notebook):
         self.AddPage(self.introTab, "Intro")
         self.AddPage(self.configurationReaderTab, "Configuration Reader")
         self.AddPage(self.modemInfoTab, "Modem Information")
-        self.AddPage(self.troubleshooterTab, "CMTS Troubleshooter")
+        self.AddPage(self.troubleshooterTab, "Health Check Audit")
